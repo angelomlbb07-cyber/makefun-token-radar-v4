@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #111827; background: #f8fafc; font-size: 14px; line-height: 1.45; }
+header { background: #0f172a; color: #f1f5f9; padding: 14px 20px 12px; }
+header h1 { margin: 0 0 2px; font-size: 26px; letter-spacing: -0.02em; }
+header h1 .v { color: #38bdf8; }
+header .sub { margin: 0; color: #cbd5e1; font-size: 13px; }
+.stats { display: flex; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.stat { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 8px 12px; min-width: 130px; }
+.stat b { display: block; font-size: 20px; color: #fff; }
+.stat span { color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+.judge { background: #fffbeb; border-bottom: 2px solid #f59e0b; padding: 10px 20px; }
+.judge h2 { margin: 0 0 4px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #92400e; }
+.judge p { margin: 2px 0; font-size: 13px; color: #451a03; }
+.controls { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; padding: 10px 20px; background: #fff; border-bottom: 1px solid #e2e8f0; position: sticky; top: 0; z-index: 5; }
+.controls label { font-size: 12px; color: #475569; display: flex; flex-direction: column; gap: 2px; }
+.controls select, .controls input { font: inherit; padding: 5px 7px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; }
+.controls button { font: inherit; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f1f5f9; cursor: pointer; }
+.controls button:hover { background: #e2e8f0; }
+.count { font-size: 12px; color: #475569; margin-left: auto; }
+main { padding: 0 20px 20px; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { padding: 5px 8px; text-align: left; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
+th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: #64748b; cursor: pointer; background: #f8fafc; }
+th:hover { color: #0f172a; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+tbody tr:hover { background: #f1f5f9; }
+tbody tr { cursor: pointer; }
+.rank { font-weight: 700; color: #0f172a; }
+.name { font-weight: 600; }
+.name .slug { color: #64748b; font-weight: 400; font-size: 12px; }
+.cat { color: #475569; }
+.chains { color: #475569; font-size: 12px; }
+.up { color: #15803d; } .down { color: #b91c1c; } .flat { color: #64748b; }
+.verdict { font-weight: 700; padding: 2px 8px; border-radius: 999px; font-size: 12px; }
+.verdict.FARM { background: #dcfce7; color: #166534; }
+.verdict.THIN { background: #fef9c3; color: #854d0e; }
+.verdict.SKIP { background: #fee2e2; color: #991b1b; }
+#detail { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px 18px; margin: 14px 0; }
+#detail-close { font: inherit; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f1f5f9; cursor: pointer; margin-bottom: 10px; }
+#detail h2 { margin: 0 0 4px; font-size: 22px; }
+#detail h3 { margin: 14px 0 6px; font-size: 14px; }
+#detail .meta { color: #475569; font-size: 13px; }
+#detail .deriv { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; white-space: pre-wrap; }
+#detail .band { font-size: 15px; }
+#detail .band b { font-size: 18px; }
+#detail ol.steps { margin: 6px 0 0; padding-left: 22px; }
+#detail ol.steps li { margin: 6px 0; }
+#detail ol.steps li .cost { color: #475569; }
+#live h2, #method h2 { font-size: 18px; margin: 18px 0 6px; }
+#live p, #method .note { color: #475569; font-size: 13px; }
+.method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.method-grid h3 { font-size: 14px; margin: 0 0 8px; }
+#validation td, #validation th { white-space: normal; }
+footer { padding: 14px 20px 20px; color: #64748b; font-size: 12px; }
+@media (max-width: 900px) { .method-grid { grid-template-columns: 1fr; } th, td { padding: 4px 5px; } }
